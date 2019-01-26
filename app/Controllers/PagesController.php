@@ -1,8 +1,9 @@
 <?php
     class PagesController{
         public function index(){
-            $obj = new Model();
-            $objModel = $obj->model('User');
+            $model = new User();
+            $get = $model->get();
+            var_dump($get);
         }
     }
 ?>
